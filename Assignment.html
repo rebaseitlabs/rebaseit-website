@@ -265,6 +265,13 @@
       .position-item select {
       width: 100%;
       }
+      .blink_me {
+    animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {  
+    50% { opacity: 0; }
+    }
       }
     </style>
   </head>
@@ -280,7 +287,8 @@
         </div>
         <h1>Assignment Form</h1>
       </div>
-      <p class="top-info">Thank you for your interest in working with us.</p>
+      <p class="top-info">Submit one of the assignment based on this <a href="https://docs.google.com/document/d/1Hv6BGNvw7uNDoLFzI-f613i6skVLnXLr522ja3EtpzI/edit?usp=sharing/"
+         target="_blank"><span class="blink_me"><b>PROBLEM STATEMENT</b></span>.</a></p>
       <div class="item">
         <p>Name<span class="required">*</span></p>
         <div class="name-item">
@@ -314,7 +322,7 @@
               Assignment 3
             </option>
             <option value="4">
-              Assignment4
+              Assignment 4
             </option>
             <option value="5">
               Assignment 5
